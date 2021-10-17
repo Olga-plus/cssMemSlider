@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    height: 80%;
+    background-color: darkgray;
+	margin: 5vh auto 0;
+	position: relative;
+
+}
+
+input {
+	display: none;
+}
+
+.slider {
+    background-color: dodgerblue;
+    height: 40vh;
+    width: 63%;
+    overflow: hidden;
+    z-index: 100px;
+    position: absolute;
+    top: 0;
+    
+}
+
+.slides {
+    height: inherit;
+    width: inherit;
+    background-size:inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: absolute;
+    top:100px;
+    right: 100px;
+    overflow: hidden;
+    -webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+.slide1 { background-image: url(https://c.tenor.com/MK3U9VAdNq4AAAAC/talk-soon-talk-to-you-soon.gif); }
+.slide2 { background-image: url(https://c.tenor.com/qvTaQhuCd7MAAAAC/talk-soon-wave.gif); }
+.slide3 { background-image: url(https://c.tenor.com/BIiN5LXW1eEAAAAC/phone-telephone.gif); }
+.slide4 { background-image: url(https://c.tenor.com/73wMl7ESSXAAAAAd/monkey-phone-call.gif); }
+
+.wrapper-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: khaki;
+    height:  3vh;
+    width: inherit;
+    position: absolute;
+}
+
+.quotes {
+    height: 2.5vh;
+    overflow: hidden;
+}
+
+.quote {
+    font-size: 0.8rem;
+    height: inherit;
+}
+
+.controls label {
+    background-color: rgb(118, 0, 252);
+	cursor: pointer;
+	display: inline-block;
+    height: 10px;
+    width: 10px;
+	margin: 0 0px 0 5px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+    border: 5px solid;
+
+    -webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.controlslabel:after {
+	border: 1px solid rgb(121, 11, 35);
+	content: " ";
+	display: block;
+	height: 10px;
+	right: -6px;
+	position: absolute;
+	top: -6px;
+	width: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #ddd;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index:3;
+}

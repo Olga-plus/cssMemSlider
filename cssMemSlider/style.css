@@ -21,7 +21,7 @@ body {
     width: 63%;
     height: 80%;
     background-color: darkgray;
-	margin: 5vh auto 0;
+	margin: 0 auto;
 	position: relative;
 
 }
@@ -31,9 +31,10 @@ input {
 }
 
 .slider {
+    display: flex;
     background-color: dodgerblue;
-    height: 40vh;
-    width: 63%;
+    height: 38vh;
+    width: 59vh;
     overflow: hidden;
     z-index: 100px;
     position: absolute;
@@ -49,8 +50,6 @@ input {
     background-repeat: no-repeat;
     z-index: 0;
     position: absolute;
-    top:100px;
-    right: 100px;
     overflow: hidden;
     -webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
@@ -76,6 +75,7 @@ input {
     height:  3vh;
     width: inherit;
     position: absolute;
+    top: 488px
 }
 
 .quotes {

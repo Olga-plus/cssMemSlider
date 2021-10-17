@@ -61,17 +61,17 @@ input {
 	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
 
-.slide1 { background-image: url(https://c.tenor.com/MK3U9VAdNq4AAAAC/talk-soon-talk-to-you-soon.gif); }
-.slide2 { background-image: url(https://c.tenor.com/qvTaQhuCd7MAAAAC/talk-soon-wave.gif); }
-.slide3 { background-image: url(https://c.tenor.com/BIiN5LXW1eEAAAAC/phone-telephone.gif); }
-.slide4 { background-image: url(https://c.tenor.com/73wMl7ESSXAAAAAd/monkey-phone-call.gif); }
+.slide1 { background-image: url(https://c.tenor.com/gNj2uInR2eYAAAAC/dolph-ziggler-nicholas-theodore-nemeth.gif); }
+.slide2 { background-image: url(https://c.tenor.com/HTIpowYA_pMAAAAC/dolph-ziggler-drew-mc-intyre.gif); }
+.slide3 { background-image: url(https://c.tenor.com/0MQOQpofGCIAAAAC/dance-heavy-machinery.gif); }
+.slide4 { background-image: url(https://c.tenor.com/0Xl_mXCZERQAAAAC/wwe-dolph-ziggler.gif);}
 
 .wrapper-control {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: khaki;
+    /* background-color: khaki; */
     height:  3vh;
     width: inherit;
     position: absolute;
